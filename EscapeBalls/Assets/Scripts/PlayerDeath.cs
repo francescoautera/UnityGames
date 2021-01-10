@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    
+    
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Bullet") {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Deaths");
+            
         }  
     }
 }

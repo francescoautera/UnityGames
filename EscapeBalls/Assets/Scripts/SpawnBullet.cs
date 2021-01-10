@@ -21,8 +21,8 @@ public class SpawnBullet : MonoBehaviour
         }
         else if (timer <= 0)
         {
-            var create = new Vector3(Random.Range(wallsx.transform.position.x, walldx.transform.position.x),
-               10, Random.Range(wallsx.transform.position.z, walldx.transform.position.z));
+            var create = new Vector3(Random.Range(wallsx.transform.position.x, walldx.transform.position.x), 
+                                      10, Random.Range(wallsx.transform.position.z, walldx.transform.position.z));
             Instantiate(myprefab, create, Quaternion.identity); // quaternion richima la rotazione dell'oggetto
             DecreseTimer();
 
@@ -41,8 +41,7 @@ public class SpawnBullet : MonoBehaviour
 
         }
         else
-        {
-
+        { 
             timer = 0.5f;
         }
     }
